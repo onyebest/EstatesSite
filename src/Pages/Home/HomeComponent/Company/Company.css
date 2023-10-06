@@ -1,0 +1,13 @@
+.company__container{
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.company__container .container__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.company__container img{
+    height: 100px;
+}

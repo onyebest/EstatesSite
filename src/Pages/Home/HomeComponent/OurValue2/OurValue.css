@@ -1,0 +1,136 @@
+.ourvalue__container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.ourvalue__container .container__content {
+  display: flex;
+  flex: 1;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+/* content 1 starts here */
+
+.ourvalue__container .img__container {
+  height: 550px;
+  width: 400px;
+  border: 8px solid var(--secondary);
+  overflow: hidden;
+  border-top-left-radius: 15rem;
+  border-top-right-radius: 15rem;
+  margin: 0 auto;
+}
+
+.ourvalue__container .img__container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* content 2 starts here */
+.ourvalue__container .content__2{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.ourvalue__container .top__text{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ourvalue__container .top__text h4{
+    color: orange;
+    font-size: 1.3rem;
+}
+
+.ourvalue__container .top__text h5{
+    color: var(--primary);
+    font-size: 1.7rem;
+}
+
+.ourvalue__container .tabs__container{
+    margin-top: 1rem;
+    width: 80%;
+    margin-right: 0;
+}
+
+.ourvalue__container .tabs__template{
+    background: var(--secondary);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.ourvalue__container .tabs__template h3{
+    display: flex;
+    flex-direction: row;
+    color: var(--primary);
+    justify-content: space-between;
+}
+
+.ourvalue__container .tabs__template h3 .icon{
+    background: rgb(140 139 139);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 10px 0;
+}
+
+/* styling for the tabs */
+.ourvalue__container .tabs__container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ourvalue__container .tablist{
+    display: flex;
+    background: none;
+    outline: none;
+    justify-content: center;
+}
+
+.ourvalue__container .tablist .tab{
+    font-size: 0.7rem;
+    outline: none;
+    margin: 4px 1rem;
+    padding: 2px 0.5rem;
+    cursor: pointer;
+    transition: 0.4 all ease;
+}
+
+.ourvalue__container .tablist .tab__1:focus{
+    background: rgba(89, 86, 86, 0.356);
+}
+
+.ourvalue__container .tablist .tab__2:focus{
+    background: rgba(89, 86, 86, 0.356);
+}
+
+.ourvalue__container .tablist .tab__3:focus{
+    background: rgba(89, 86, 86, 0.356);
+}
+
+.ourvalue__container .tabs__template p{
+    font-size: 0.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: -4px;
+    border-radius: 5px;
+    width: 99%;
+}
+
+.ourvalue__container .tabs__template .para__1{
+    background: rgba(89, 86, 86, 0.356);
+}
+
+.ourvalue__container .tabs__template .para__2{
+    background: rgba(89, 86, 86, 0.356);
+}
+
+.ourvalue__container .tabs__template .para__3{
+    background: rgba(89, 86, 86, 0.356);
+}

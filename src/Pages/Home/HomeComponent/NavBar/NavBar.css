@@ -1,0 +1,120 @@
+.nav__container {
+  position: fixed;
+  width: 100%;
+  overflow-x: auto;
+  top: 0;
+  background-color: var(--black);
+  color: var(--secondary);
+  padding: 1.8rem;
+  z-index: 100;
+}
+
+.nav__container .nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__container .logo {
+  position: relative;
+}
+
+.nav__container .logo a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+}
+
+.nav__container ul {
+  display: flex;
+}
+
+.nav__container ul li {
+  margin: 0 1.5rem;
+}
+
+.nav__container ul li a {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.nav__container .contact {
+  background: var(--blue-gradient);
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: 0.4 all ease;
+}
+
+.nav__container .contact > a:hover {
+  transform: scale(0.8) !important;
+}
+
+.nav__container .orange__circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.5rem;
+  right: -0.8rem;
+  background: var(--blue-gradient);
+  z-index: -1;
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .nav__container {
+    width: 100%;
+  }
+
+  .menu {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .nav__container .list__content {
+    position: absolute;
+    right: 2rem;
+    top: 5rem;
+    flex-direction: column;
+    background: rgba(19, 17, 16, 0.801);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    width: fit-content;
+    height: 0;
+    transition: all 0.4s ease-out;
+    border-radius: 5px;
+  }
+
+  .nav__container .list__content.active {
+    height: 250px;
+  }
+
+  .nav__container li {
+    padding: 0.7rem 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav__container {
+    width: 100%;
+  }
+
+  .nav__container .logo a {
+    font-size: 1rem;
+  }
+
+  .nav__container .orange__circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -0.3rem;
+    right: -0.6rem;
+    background: var(--blue-gradient);
+    z-index: -1;
+  }
+}

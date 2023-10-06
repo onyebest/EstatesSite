@@ -1,0 +1,224 @@
+.hero__container {
+  background-color: var(--black);
+  color: white;
+  margin-top: 5.5rem;
+}
+
+.hero__container .container__content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+/* content 1 starts here */
+
+.hero__container .content__1 {
+  position: relative;
+  width: 100%;
+}
+
+.hero__container .content__1 .big__text {
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  position: relative;
+  z-index: 8;
+  width: fit-content;
+}
+
+.orange__circle {
+  height: 4rem;
+  width: 4rem;
+  background: var(--orange-gradient);
+  border-radius: 100%;
+  position: absolute;
+  right: 28%;
+  top: -11%;
+  z-index: -1;
+}
+
+.hero__container .content__1 h4 {
+  color: var(--secondary);
+  font-size: 0.9rem;
+  margin: 2rem 0;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+/* Search Bar Starts here */
+
+.hero__container .search {
+  background-color: var(--lightBlue);
+  width: fit-content;
+  border: solid 2px var(--secondary);
+  border-radius: 5px;
+  padding: 0.5rem 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__container .search input {
+  border: none;
+  padding: 0 1.5rem;
+  margin: 0 1.5rem;
+  outline: none;
+}
+
+.hero__container .search button {
+  padding: 8px 1.3rem;
+  background: var(--blue-gradient);
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.hero__container .search .icon {
+  margin: 7px auto;
+}
+
+/* Count Up Starts here */
+.hero__container .countup {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  text-align: center;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+
+.hero__container .countup__1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.hero__container .countup__1 > :nth-child(2) {
+  color: orange;
+  margin-left: 4px;
+}
+
+.hero__container .countup__content .secondaryText {
+  color: rgb(140 139 139);
+  font-size: 0.9rem;
+  padding: 6px;
+}
+
+/* Content 2 starts here */
+
+.hero__container .content__2 {
+  width: 100%;
+}
+
+.hero__container .content__2 .img__container {
+  height: 500px;
+  width: 400px;
+  border: 8px solid var(--secondary);
+  overflow: hidden;
+  border-top-left-radius: 15rem;
+  border-top-right-radius: 15rem;
+  margin: 0 auto;
+}
+
+.hero__container .content__2 .img__container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 1150px) {
+  .hero__container .container__content {
+    width: 90%;
+  }
+
+  .hero__container .content__2 .img__container {
+    height: 500px;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero__container .container__content {
+    width: 95%;
+    flex-direction: column;
+  }
+
+  .hero__container .content__1 {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero__container .content__2 {
+    margin-top: 2rem;
+  }
+
+  .hero__container .content__2 .img__container {
+    height: 500px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hero__container .content__1 {
+    align-items: center;
+  }
+
+  .hero__container .big__text {
+    font-size: 2.8rem !important;
+    line-height: 2.8rem !important;
+  }
+  .hero__container .orange__circle {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  .hero__container .content__1 h4 {
+    width: 80%;
+  }
+
+  .hero__container .search {
+    width: 80%;
+    padding: 0.5rem 3px !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero__container .search button {
+    padding: 5px 0.9rem;
+  }
+
+  .hero__container .search input {
+    padding: 0 0.6rem;
+    margin: 0 0.6rem;
+  }
+}
+
+@media screen and (max-width: 450px){
+.hero__container .container__content {
+    width: 100%;
+    flex-direction: column;
+  }
+
+   .hero__container .search {
+    width: 100%;
+  }
+
+   .hero__container .content__1 h4 {
+    width: 100%;
+  }
+
+  .hero__container .big__text{
+    width: 100%;
+  }
+
+ .hero__container .content__2 .img__container {
+  height: 500px;
+  width: 320px !important;
+}
+}

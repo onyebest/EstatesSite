@@ -1,0 +1,40 @@
+.get__container{
+    width: 90%;
+    margin: 3rem auto 0;
+}
+
+.get__container .container__content{
+    text-align: center;
+    color: var(--lightBlue);
+    border-radius: 9px;
+    border: 5px solid var(--blue);
+    background: var(--blue-gradient);
+    padding: 2rem 0;
+    margin: 1rem 0;
+}
+
+.get__container h1{
+
+}
+
+.get__container h4{
+    font-weight: 400;
+    color: var(--secondary);
+    margin: 2rem 0;
+}
+
+.get__container a{
+    background: var(--blue);
+    border: 2px solid var(--newValue);
+    width: fit-content;
+    padding: 0.8rem 1rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.4s ease-out;
+}
+
+.get__container a:hover{
+    background: none;
+}
