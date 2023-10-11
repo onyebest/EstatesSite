@@ -24,6 +24,7 @@
 
 body {
   background: rgba(0, 0, 0, 0.127);
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -35,5 +36,11 @@ a {
 @media screen and (max-width: 600px){
   ::-webkit-scrollbar {
     display: none;
+  }
+}
+
+@media screen and (max-width: 400px){
+  body{
+    width: 100vw;
   }
 }

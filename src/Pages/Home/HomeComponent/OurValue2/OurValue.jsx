@@ -10,11 +10,14 @@ const OurValue = () => {
   return (
     <div className='ourvalue__container'>
       <div className='container__content'>
+      {/* content 1 starts here */}
         <div className='content__1'>
           <div className='img__container'>
             <img src={Image1} alt='' />
           </div>
         </div>
+
+        {/* content 2 starts here */}
 
         <div className='content__2'>
           <div className='top__text'>

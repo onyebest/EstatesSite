@@ -222,3 +222,19 @@
   width: 320px !important;
 }
 }
+
+@media screen and (max-width: 370px){
+  
+  .hero__container .search input {
+    padding: 0 1rem;
+    margin: 0 1rem;
+  }
+  
+  .hero__container .search button {
+    padding: 4px 0.8rem;
+  }
+  
+  .hero__container .search .icon {
+    margin: 4px auto;
+  }
+}

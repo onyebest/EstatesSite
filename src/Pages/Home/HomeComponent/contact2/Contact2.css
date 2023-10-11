@@ -114,3 +114,110 @@
   object-fit: cover;
   object-position: center;
 }
+
+@media screen and (max-width: 1137px) {
+  .contact__container .contact__template {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .contact__container .template {
+    padding: 1rem 0.8rem;
+    margin: 0 0.5rem 0.5rem 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact__container .inner .icon {
+    padding: 4px;
+    font-size: 1rem;
+    border-radius: 2px;
+    margin: 3px;
+  }
+
+  .contact__container .inner h3 {
+    margin: 0 1rem 0.6rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+
+  .contact__container .inner h3 span {
+    font-size: 0.7rem;
+  }
+
+  .contact__container .template a {
+    padding: 5px 4rem;
+    max-width: 100%;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+
+  .contact__container .template a:hover {
+    color: white;
+    background: var(--blue-gradient);
+    scale: 0.8;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact__container .container__content {
+    flex-direction: column;
+  }
+
+  .contact__container .contact__template {
+    margin: 0 auto;
+    gap: 0.4rem;
+    width: fit-content;
+  }
+
+  .contact__container .template {
+    width: fit-content;
+    margin-bottom: 1rem;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 619px) {
+  .contact__container .template {
+    padding: 0.5rem;
+  }
+
+  .contact__container .top__text h4 {
+    font-size: 1rem;
+  }
+
+  .contact__container .top__text h5 {
+    font-size: 1.3rem;
+  }
+
+  .contact__container .top__text h6 {
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 488px) {
+  .contact__container .contact__template {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact__container .content__2 {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .contact__container .template {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .contact__container .img__container {
+    width: 300px;
+  }
+}

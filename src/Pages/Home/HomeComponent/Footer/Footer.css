@@ -57,3 +57,42 @@
   right: -0.8rem;
   background: var(--orange-gradient);
 }
+
+@media screen and (max-width: 890px){
+  .footer__container .list__content li{
+    display: none;
+  }
+
+  .footer__container .logo a {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--blue);
+  }
+  
+  .footer__container .orange__circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -0.2rem;
+    right: -0.8rem;
+    background: var(--orange-gradient);
+  }
+
+  .footer__container .content__2 h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--blue);
+  }
+  
+  .footer__container .content__2 h3 {
+    font-size: 0.5rem;
+  }
+
+  .footer__container .content__1 h4 {
+    color: var(--secondaryColor);
+    margin: 0.6rem 0;
+    font-weight: 300;
+    font-size: 0.5rem;
+  }
+}

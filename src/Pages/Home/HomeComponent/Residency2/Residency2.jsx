@@ -21,6 +21,30 @@ const Residency2 = () => {
     autoplaySpeed: 2000, // Auto-play interval in milliseconds
   };
 
+  const breakpoints = [
+    {
+      breakpoint: 1024, // Large screens
+      settings: {
+        slidesToShow: 3, // Number of slides to show for large screens
+      },
+    },
+    {
+      breakpoint: 768, // Medium screens
+      settings: {
+        slidesToShow: 2, // Number of slides to show for medium screens
+      },
+    },
+    {
+      breakpoint: 480, // Small screens
+      settings: {
+        slidesToShow: 1, // Number of slides to show for small screens
+      },
+    },
+  ];
+
+  // Merge breakpoints into the main settings
+  settings.responsive = breakpoints;
+
   const slideStyle = {
     margin: "200px", // Add margins as needed
     padding: "200px", // Add padding as needed
@@ -36,7 +60,7 @@ const Residency2 = () => {
 
         <Slider {...settings} className='slide'>
           <div className='slider__content' style={slideStyle}>
-            <img src={Image1} alt='' />
+            <div className="img__cont"><img src={Image1} alt='' /></div>
             <h4>
               <span>₦</span>350,000,000
             </h4>
@@ -48,7 +72,7 @@ const Residency2 = () => {
           </div>
 
           <div className='slider__content'>
-            <img src={Image2} alt='' />
+            <div className="img__cont"><img src={Image2} alt='' /></div>
             <h4>
               <span>₦</span>500,000,000
             </h4>
@@ -60,7 +84,7 @@ const Residency2 = () => {
           </div>
 
           <div className='slider__content'>
-            <img src={Image3} alt='' />
+            <div className="img__cont"><img src={Image3} alt='' /></div>
             <h4>
               <span>₦</span>200,000,000
             </h4>
@@ -72,7 +96,7 @@ const Residency2 = () => {
           </div>
 
           <div className='slider__content'>
-            <img src={Image4} alt='' />
+            <div className="img__cont"><img src={Image4} alt='' /></div>
             <h4>
               <span>₦</span>234,000,500
             </h4>
@@ -84,7 +108,7 @@ const Residency2 = () => {
           </div>
 
           <div className='slider__content'>
-            <img src={Image5} alt='' />
+            <div className="img__cont"><img src={Image5} alt='' /></div>
             <h4>
               <span>₦</span>238,304,928
             </h4>
@@ -96,7 +120,7 @@ const Residency2 = () => {
           </div>
 
           <div className='slider__content'>
-            <img src={Image6} alt='' />
+            <div className="img__cont"><img src={Image6} alt='' /></div>
             <h4>
               <span>₦</span>938,829,000
             </h4>
@@ -108,7 +132,7 @@ const Residency2 = () => {
           </div>
 
           <div className='slider__content'>
-            <img src={Image7} alt='' />
+            <div className="img__cont"><img src={Image7} alt='' /></div>
             <h4>
               <span>₦</span>230,900,000
             </h4>
